@@ -24,6 +24,17 @@ class DiscWheel extends Wheel {
 
 public class Car {
 
+    Car(){
+
+    }
+
+    Car (Wheel fl, Wheel fr, Wheel bl, Wheel br){
+        this.fl= fl;
+        this.fr= fr;
+        this.bl =bl;
+        this.br= br;
+    }
+
     Wheel fl;
     Wheel fr;
     Wheel bl;
@@ -61,3 +72,5 @@ public class Car {
         this.br = br;
     }
 }
+
+

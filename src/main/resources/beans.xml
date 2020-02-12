@@ -18,6 +18,7 @@
         </property>
     </bean>
 
+    <!--
     <bean id="altoLxi" class="techehub.Car">
 
         <property name="fl" ref="disc">
@@ -34,7 +35,6 @@
 
     </bean>
 
-
     <bean id="altoVxi" class="techehub.Car">
 
         <property name="fl" ref="alloy">
@@ -49,6 +49,15 @@
         <property name="br" ref="alloy">
         </property>
 
+    </bean>
+    -->
+
+
+    <bean id="altoVxi" class="techehub.Car">
+        <constructor-arg name="fl"  ref="alloy"></constructor-arg>
+        <constructor-arg name="fr"  ref="alloy"></constructor-arg>
+        <constructor-arg name="bl"  ref="alloy"></constructor-arg>
+        <constructor-arg name="br"  ref="alloy"></constructor-arg>
     </bean>
 
 </beans>

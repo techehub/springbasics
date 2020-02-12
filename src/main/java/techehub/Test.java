@@ -7,9 +7,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        ApplicationContext context =new ClassPathXmlApplicationContext("beans.xml");
-        Car c = (Car)context.getBean("altoVxi");
-        System.out.println(c.fl.size);
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        Car c1 = (Car)context.getBean("altoVxi");
+        System.out.println(c1.fl.size);
+
 
     }
 
